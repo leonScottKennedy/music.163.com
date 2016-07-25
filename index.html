@@ -1,57 +1,767 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Music.163.com by leonScottKennedy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Music.163.com</h1>
-      <h2 class="project-tagline">网易云音乐</h2>
-      <a href="https://github.com/leonScottKennedy/music.163.com" class="btn">View on GitHub</a>
-      <a href="https://github.com/leonScottKennedy/music.163.com/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/leonScottKennedy/music.163.com/tarball/master" class="btn">Download .tar.gz</a>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>网易云音乐 听见好时光</title>
+    <link rel="shortcut icon" href="images/music.ico"/>
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="js/selectivizr.js"></script>
+    <![endif]-->
+    <!--[if IE]> 
+        <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if IE 6]>
+    <script src="js/DD_belatedPNG_0.0.8a.js"></script>
+    <script>
+        DD_belatedPNG.fix("*");
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+	<header>
+        <div class="center">
+            <h1 class="logo"><a href="index.html"></a></h1>
+            <ul class="m-nav">
+                <li class="cur"><a href="javascript:;">发现音乐<em></em></a></li>
+                <li><span><a href="javascript:;">我的音乐<em></em></a></span></li>
+                <li><span><a href="javascript:;">朋友<em></em></a></span></li>
+                <li><span><a href="javascript:;">下载客户端<em></em><sup></sup></a></span></li>
+            </ul>
+            <form action="">
+                <input type="text" name="" id="" placeholder="单曲/歌手/专辑/歌单/MV/用户" />
+                <input type="submit" value="" />
+            </form>
+            <div class="login">
+                <a href="javascript:;">登录<span></span></a>
+            </div>
+        </div>   
+    </header>
+    <nav id="nav">
+        <div class="center">
+            <ul>
+                <li class="active"><a href="javascript:;">推荐</a><span></span></li>
+                <li><a href="javascript:;">排行榜</a><span></span></li>
+                <li><a href="javascript:;">歌单</a><span></span></li>
+                <li><a href="javascript:;">主播电台</a><span></span></li>
+                <li><a href="javascript:;">歌手</a><span></span></li>
+                <li><a href="javascript:;">新碟上架</a><span></span></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="tab">
+        <div class="center">
+            <ul class="pic">
+                <li><a href="javascript:;"><img src="http://p3.music.126.net/XtDcLzKjyotuKCw8nQquxQ==/3445869448131394.jpg"/></a></li>
+                <li><a href="javascript:;"><img src="http://p3.music.126.net/J_KUpc3YcHINg0c_bWk_oA==/2946691197415392.jpg"/></a></li>
+                <li><a href="javascript:;"><img src="http://p4.music.126.net/-Yt1urI7k__Oi2M70cS7mA==/1382086129362754.jpg"/></a></li>
+                <li><a href="javascript:;"><img src="http://p3.music.126.net/233aC2OtooQB17XtY1hMpw==/1388683199163140.jpg"/></a></li>
+                <li><a href="javascript:;"><img src="http://p3.music.126.net/yOsZ2jsBEs0HGbBJKY-yig==/3433774820258613.jpg"></a></li>
+                <li><a href="javascript:;"><img src="http://p4.music.126.net/Wd6jmpEKfldU8LUGRyAVfw==/3393092900819201.jpg"/></a></li>
+                <li><a href="javascript:;"><img src="http://p3.music.126.net/I7-LKgoHvff-f489BBPaJw==/1410673431753310.jpg"/></a></li>
+                <li><a href="javascript:;"><img src="http://p3.music.126.net/wjo4N-XHas1o4fLrjWmzUg==/3265549567328521.jpg"/></a></li>
+            </ul>
+            <ol class="circle">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <div class="download">
+                <a href="javascript:;"></a>
+                <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+            </div>
+        </div>
+        <a href="javascript:;" class="prev"></a>
+        <a href="javascript:;" class="next"></a>
     </section>
-
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/leonScottKennedy/music.163.com">Music.163.com</a> is maintained by <a href="https://github.com/leonScottKennedy">leonScottKennedy</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
+    <section id="main">
+        <div class="center">
+            <article>
+                <header>
+                    <h2><a href="javascript:;">热门推荐</a></h2>
+                    <ul>
+                        <li><a href="javascript:;">华语</a>|</li>
+                        <li><a href="javascript:;">流行</a>|</li>
+                        <li><a href="javascript:;">摇滚</a>|</li>
+                        <li><a href="javascript:;">民谣</a>|</li>
+                        <li><a href="javascript:;">电子</a></li>
+                    </ul>
+                    <a href="javascript:;" class="more">更多<span></span></a>
+                </header>
+                <section>
+                    <ul class="thumbnail">
+                        <li>
+                            <a href="javascript:;" class="image">
+                                <img src="http://p3.music.126.net/FX6d7LqiksA3gXxI2VF1dw==/3251255893660144.jpg?param=140y140"/>
+                                <div class="play">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="title">
+                                【暖心·故事】原来你还在这里
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="image">
+                                <img src="http://p3.music.126.net/NeUZoErgMtTneFEBCzK9mQ==/3250156382941092.jpg?param=140y140"/>
+                                <div class="play">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="title">
+                                【韩语珍藏女声】湮没在人潮的独白
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="image">
+                                <img src="http://p4.music.126.net/bAZ5qQ--bjeJynESH-_55g==/1386484170870681.jpg?param=140y140"/>
+                                <div class="play">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="title">
+                                有一种遗憾叫，错的时间遇见对的人
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="image">
+                                <img src="http://p4.music.126.net/u5txLkiZ_Th6COeE284wmw==/1405175873247041.jpg?param=140y140"/>
+                                <div class="play">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="title">
+                                不玩游戏干什么之7月篇!【GADIO VOL.184】
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="image">
+                                <img src="http://p3.music.126.net/FF7WrgCNlyrAYdef7RyvAw==/1396379771673334.jpg?param=140y140"/>
+                                <div class="play">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="title">
+                                『华语』KTV最佳对唱“CP”称号就靠它了
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="image">
+                                <img src="http://p3.music.126.net/GDMLYnEpUGi3VmW51lJ09A==/3250156383281838.jpg?param=140y140"/>
+                                <div class="play">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="title">
+                                穷鬼，我凭什么嫁给你
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="image">
+                                <img src="http://p3.music.126.net/kDQkWIzmDprn-xU2QGqXqQ==/3420580685953484.jpg?param=140y140"/>
+                                <div class="play">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="title">
+                                “神插入”歌曲之【那些自带BGM的角色】
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="image">
+                                <img src="http://p3.music.126.net/7M0UnzLa2usIYjuAtjgKlg==/3399689961484849.jpg?param=140y140"/>
+                                <div class="play">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="title">
+                                是真是假？登月计划与陈景润的哥达巴赫猜想
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="ad">
+                    <a href="javascript:;">
+                        <img src="http://haitaoad.nosdn.127.net/ad.bid.material_9ae057a7b1ac428bb008f69bf435e5e3?imageView&thumbnail=689x75&quality=85"/>
+                    </a>
+                </section>
+                <section class="newMusic">
+                    <header>
+                        <h2><a href="javascript:;">新碟上架</a></h2>
+                        <a href="javascript:;" class="more">更多<span></span></a>
+                    </header>
+                    <div class="wrap">
+                        <div class="inner">
+                            <a href="javascript:;" class="left"></a>
+                            <a href="javascript:;" class="right"></a>
+                            <div class="roll">
+                                <ul>
+                                    <li>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <img src="http://p3.music.126.net/LwLnMYOH2XkVfyiwtvvVKQ==/1373290035880908.jpg?param=100y100"/>
+                                            </a>
+                                        </div>
+                                        <p class="title ellipse">
+                                            <a href="javascript:;">流杯池</a>
+                                        </p>
+                                        <p class="name ellipse">
+                                            <a href="javascript:;">衣湿</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <img src="http://p3.music.126.net/mS4Nu46IGMikpGFqeMhIeQ==/3419481168694704.jpg?param=100y100"/>
+                                            </a>
+                                        </div>
+                                        <p class="title ellipse">
+                                            <a href="javascript:;">Get Out</a>
+                                        </p>
+                                        <p class="name ellipse">
+                                            <a href="javascript:;">赵泳鑫</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <img src="http://p4.music.126.net/KjXQR3P-zuzC0IhZo_PV4Q==/1386484175539505.jpg?param=100y100"/>
+                                            </a>
+                                        </div>
+                                        <p class="title ellipse">
+                                            <a href="javascript:;">请在哔声后留言</a>
+                                        </p>
+                                        <p class="name ellipse">
+                                            <a href="javascript:;">徐良</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <img src="http://p3.music.126.net/yMOSKJspth_x7R5ciXNrdA==/3437073354607445.jpg?param=100y100"/>
+                                            </a>
+                                        </div>
+                                        <p class="title ellipse">
+                                            <a href="javascript:;">Where’s the truth?</a>
+                                        </p>
+                                        <p class="name ellipse">
+                                            <a href="javascript:;">F.T Island</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <img src="http://p3.music.126.net/Ua7M7ruescaaGKfs5AL3UQ==/3412884105891523.jpg?param=100y100"/>
+                                            </a>
+                                        </div>
+                                        <p class="title ellipse">
+                                            <a href="javascript:;">Take Me Down</a>
+                                        </p>
+                                        <p class="name ellipse">
+                                            <a href="javascript:;">The Pretty Reckless</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="list">
+                    <header>
+                        <h2><a href="javascript:;">榜单</a></h2>
+                        <a href="javascript:;" class="more">更多<span></span></a>
+                    </header>
+                    <div class="wrap">
+                        <div class="middle"></div>
+                        <div class="inner">
+                            <header>
+                                <a href="javascript:;">
+                                    <img src="http://p3.music.126.net/TkNqminF5jTCzk12Mf5Acg==/7744959906898786.jpg?param=100y100"/>
+                                </a>
+                                <p><a href="javascript:;">云音乐飙升榜</a></p>
+                                <p>
+                                    <a href="javascript:;" class="play"></a>
+                                    <a href="javascript:;" class="collection"></a>
+                                </p>
+                            </header>
+                            <section>
+                                <ul>
+                                    <li>
+                                        <span rank="first">1</span>
+                                        <a href="javascript:;">从此以后</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span rank="second">2</span>
+                                        <a href="javascript:;">浙江杭州网易互联网招聘了</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span rank="third">3</span>
+                                        <a href="javascript:;">还在这里</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="javascript:;">第一页</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="javascript:;">我可以忘记你</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="javascript:;">Purple Lamborghini</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="javascript:;">Cold Water</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="javascript:;">小幸运（Cover 田馥甄）</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="javascript:;">What We Started</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="javascript:;">再见之前</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">查看更多&gt;</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="inner">
+                            <header>
+                                <a href="javascript:;">
+                                    <img src="http://p4.music.126.net/LRtxrRfP3g6Gn3vyvWEXOw==/7808731581312441.jpg?param=100y100"/>
+                                </a>
+                                <p><a href="javascript:;">云音乐新歌榜</a></p>
+                                <p>
+                                    <a href="javascript:;" class="play"></a>
+                                    <a href="javascript:;" class="collection"></a>
+                                </p>
+                            </header>
+                            <section>
+                                <ul>
+                                    <li>
+                                        <span rank="first">1</span>
+                                        <a href="javascript:;">从此以后</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span rank="second">2</span>
+                                        <a href="javascript:;">浙江杭州网易互联网招聘了</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span rank="third">3</span>
+                                        <a href="javascript:;">还在这里</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="javascript:;">第一页</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="javascript:;">我可以忘记你</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="javascript:;">Purple Lamborghini</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="javascript:;">Cold Water</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="javascript:;">小幸运（Cover 田馥甄）</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="javascript:;">What We Started</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="javascript:;">再见之前</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">查看更多&gt;</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="inner">
+                            <header>
+                                <a href="javascript:;">
+                                    <img src="http://p3.music.126.net/LgoU8FreFrdLvSY3ZTFu5g==/2902710698975677.jpg?param=100y100"/>
+                                </a>
+                                <p><a href="javascript:;">网易原创歌曲榜</a></p>
+                                <p>
+                                    <a href="javascript:;" class="play"></a>
+                                    <a href="javascript:;" class="collection"></a>
+                                </p>
+                            </header>
+                            <section>
+                                <ul>
+                                    <li>
+                                        <span rank="first">1</span>
+                                        <a href="javascript:;">从此以后</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span rank="second">2</span>
+                                        <a href="javascript:;">浙江杭州网易互联网招聘了</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span rank="third">3</span>
+                                        <a href="javascript:;">还在这里</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="javascript:;">第一页</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="javascript:;">我可以忘记你</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="javascript:;">Purple Lamborghini</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="javascript:;">Cold Water</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="javascript:;">小幸运（Cover 田馥甄）</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="javascript:;">What We Started</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="javascript:;">再见之前</a>
+                                        <div class="offer">
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                            <a href="javascript:;"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">查看更多&gt;</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <aside>
+                <section class="loginbtn">
+                    <div class="wrap">
+                        <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                        <a href="javascript:;">用户登录</a>
+                    </div>
+                </section>
+                <section class="singer">
+                    <header>
+                        <h3>入驻歌手</h3>
+                        <a href="javascript:;">查看全部&gt;</a>
+                    </header>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="http://p3.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62"/>
+                                <div class="info">
+                                    <h4>张惠妹aMEI</h4>
+                                    <p>台湾歌手张惠妹</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="http://p4.music.126.net/BvFxS88342IznhCjp6jJKg==/5783431162155757.jpg?param=62y62"/>
+                                <div class="info">
+                                    <h4>尚雯婕</h4>
+                                    <p>原创电子唱作人</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="http://p3.music.126.net/VIxIhQPW2wTREM_DfToHUA==/2107763790458943.jpg?param=62y62"/>
+                                <div class="info">
+                                    <h4>羽泉组合</h4>
+                                    <p>国内知名演唱组合 羽泉</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="http://p3.music.126.net/nS7TH_KYtj5lJr8OxDKgWw==/3263350517410958.jpg?param=62y62"/>
+                                <div class="info">
+                                    <h4>李志</h4>
+                                    <p>个体音乐人李志</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="http://p4.music.126.net/2iIlyuUKcyee0x1v4TzXTg==/1375489058855837.jpg?param=62y62"/>
+                                <div class="info">
+                                    <h4>马頔麻油叶</h4>
+                                    <p>民谣音乐人</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="button">
+                        <div class="btnR">
+                            <a href="javascript:;">申请成为网易音乐人</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="dj">
+                    <header>
+                         <h3>热门DJ</h3>
+                    </header>
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <a href="javascript:;"><img src="http://p4.music.126.net/TRG-tGs098M83Oat7pI54Q==/5994537394864711.jpg?param=40y40"/></a>
+                            </div>
+                            <div class="info">
+                                <a href="javascript:;">灵伟<span></span></a>
+                                <p>电台DJ、资深乐评人。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <a href="javascript:;"><img src="http://p3.music.126.net/3-iAVS4XnAZ_dx16gQQwkA==/3412884110281507.jpg?param=40y40"/></a>
+                            </div>
+                            <div class="info">
+                                <a href="javascript:;">庞舸<span></span></a>
+                                <p>深圳电台飞扬971主持人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <a href="javascript:;"><img src="http://p4.music.126.net/M7BZyhrQh3rgvgUMs6q6tA==/1409573914738725.jpg?param=40y40"/></a>
+                            </div>
+                            <div class="info">
+                                <a href="javascript:;">林海<span></span></a>
+                                <p>著名音乐节目主持人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <a href="javascript:;"><img src="http://p4.music.126.net/LzC_7rvZoA_PXUMeZnQ0GQ==/3368903628058175.jpg?param=40y40"/></a>
+                            </div>
+                            <div class="info">
+                                <a href="javascript:;">阿鹏叔<span></span></a>
+                                <p>桒惪SOUND创办人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <a href="javascript:;"><img src="http://p4.music.126.net/slpd09Tf5Ju82Mv-h8MP4w==/3440371884651965.jpg?param=40y40"/></a>
+                            </div>
+                            <div class="info">
+                                <a href="javascript:;">DJ晓苏<span></span></a>
+                                <p>独立DJ，CRI环球旅游广播特邀DJ</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
     </section>
+    <footer>
+        <div class="center">
+            <a href="javascript:;" class="item">
+                <span></span>
+                <p class="title">独立音乐人招募计划</p>
+                <p>加入我们 即将与超过亿万乐迷互动</p>
+            </a>
+            <a href="javascript:;" class="item">
+                <span></span>
+                <p class="title">独立音乐人招募计划</p>
+                <p>加入我们 即将与超过亿万乐迷互动</p>
+            </a>
+            <div class="item">
+                <p>
+                    <a href="javascript:;">关于网易</a>-<a href="javascript:;">客户服务</a>-<a href="javascript:;">服务条款</a>-<a href="javascript:;">网站导航</a> 网易公司版权所有<em>©1997-2016</em>
+                </p>
+                <p>
+                    网络文化经营许可证：<a href="javascript:;">浙网文 <em>[2016]0155-055</em> 号</a><a href="javascript:;" class="fb"><i></i>意见反馈</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
-  
-  </body>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
