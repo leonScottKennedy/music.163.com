@@ -1,6 +1,6 @@
 
-  IE 6.7.8 ²»Ö§³Ö CSS 3 Ñ¡ÔñÆ÷ £¿
-  ½â¾ö°ì·¨£ºÒýÈë selectivizr.js ¡£
+  IE 6.7.8 ä¸æ”¯æŒ CSS 3 é€‰æ‹©å™¨ ï¼Ÿ
+  è§£å†³åŠžæ³•ï¼šå¼•å…¥ selectivizr.js ã€‚
 
-  IE 6.7 ²»Ö§³Ö ¹ÖÒìºÐÄ£ÐÍ£¨box-sizing:border-box£© £¿
-  ½â¾ö°ì·¨£ºÔÝÊ±Ã»ÓÐ¡£
+  IE 6.7 ä¸æ”¯æŒ æ€ªå¼‚ç›’æ¨¡åž‹ï¼ˆbox-sizing:border-boxï¼‰ ï¼Ÿ
+  è§£å†³åŠžæ³•ï¼šä½¿ç”¨JSã€‚
